@@ -1,7 +1,8 @@
 import React from 'react';
+import '../../Static/Welcome.css';
 
 export default function Welcome() {
     return(
-        <h1>Welcome</h1>
+        <div className="blue">Welcome</div>
     )
 };

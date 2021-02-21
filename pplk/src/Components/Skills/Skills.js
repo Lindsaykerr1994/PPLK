@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../Static/Skills.css';
 
 export default function Skills() {
     return(
