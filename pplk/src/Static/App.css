@@ -6,8 +6,26 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Colour Specs */
+.blue {
+    background-color: var(--primary-blue);
+}
+.red {
+    background-color: var(--primary-red);
+}
+.yellow {
+    background-color: var(--primary-yellow);
+}
+.green {
+    background-color: var(--primary-green);
+}
+.orange {
+    background-color: var(--primary-orange);
+}
+.purple {
+    background-color: var(--primary-purple);
+}
+/* Component Specs */
+.main-container {
+    margin-top: 50px;
 }

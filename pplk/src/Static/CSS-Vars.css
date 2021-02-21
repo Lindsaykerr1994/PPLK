@@ -1,3 +1,85 @@
-:root{
-    --base-blue: blue;
+:root {
+    /* Base Colours */
+    --base-blue: 221.1,48.3%;
+    --base-red: 2.5, 62.6%;
+    --base-yellow: 43.4,78.3%;
+    --base-green: 144.2,47.4%;
+    --base-orange: 26.3,100%;
+    --base-purple: 272.9,52%;
+
+    /* Blue Palette */
+    --palette-blue-10: var(--base-blue), 10%;
+    --palette-blue-20: var(--base-blue), 20%;
+    --palette-blue-30: var(--base-blue), 30%;
+    --palette-blue-40: var(--base-blue), 40%;
+    --palette-blue-50: var(--base-blue), 50%;
+    --palette-blue-60: var(--base-blue), 60%;
+    --palette-blue-70: var(--base-blue), 70%;
+    --palette-blue-80: var(--base-blue), 80%;
+    --palette-blue-90: var(--base-blue), 90%;
+    --palette-blue-100: var(--base-blue), 100%;
+    /* Red Palette */
+    --palette-red-10: var(--base-red), 10%;
+    --palette-red-20: var(--base-red), 20%;
+    --palette-red-30: var(--base-red), 30%;
+    --palette-red-40: var(--base-red), 40%;
+    --palette-red-50: var(--base-red), 50%;
+    --palette-red-60: var(--base-red), 60%;
+    --palette-red-70: var(--base-red), 70%;
+    --palette-red-80: var(--base-red), 80%;
+    --palette-red-90: var(--base-red), 90%;
+    --palette-red-100: var(--base-red), 100%;
+    /* Yellow Palette */
+    --palette-yellow-10: var(--base-yellow), 10%;
+    --palette-yellow-20: var(--base-yellow), 20%;
+    --palette-yellow-30: var(--base-yellow), 30%;
+    --palette-yellow-40: var(--base-yellow), 40%;
+    --palette-yellow-50: var(--base-yellow), 50%;
+    --palette-yellow-60: var(--base-yellow), 60%;
+    --palette-yellow-70: var(--base-yellow), 70%;
+    --palette-yellow-80: var(--base-yellow), 80%;
+    --palette-yellow-90: var(--base-yellow), 90%;
+    --palette-yellow-100: var(--base-yellow), 100%;
+    /* Green Palette */
+    --palette-green-10: var(--base-green), 10%;
+    --palette-green-20: var(--base-green), 20%;
+    --palette-green-30: var(--base-green), 30%;
+    --palette-green-40: var(--base-green), 40%;
+    --palette-green-50: var(--base-green), 50%;
+    --palette-green-60: var(--base-green), 60%;
+    --palette-green-70: var(--base-green), 70%;
+    --palette-green-80: var(--base-green), 80%;
+    --palette-green-90: var(--base-green), 90%;
+    --palette-green-100: var(--base-green), 100%;
+    /* Orange Palette */
+    --palette-orange-10: var(--base-orange), 10%;
+    --palette-orange-20: var(--base-orange), 20%;
+    --palette-orange-30: var(--base-orange), 30%;
+    --palette-orange-40: var(--base-orange), 40%;
+    --palette-orange-50: var(--base-orange), 50%;
+    --palette-orange-60: var(--base-orange), 60%;
+    --palette-orange-70: var(--base-orange), 70%;
+    --palette-orange-80: var(--base-orange), 80%;
+    --palette-orange-90: var(--base-orange), 90%;
+    --palette-orange-100: var(--base-orange), 100%;
+    /* Purple Palette */
+    --palette-purple-10: var(--base-purple), 10%;
+    --palette-purple-20: var(--base-purple), 20%;
+    --palette-purple-30: var(--base-purple), 30%;
+    --palette-purple-40: var(--base-purple), 40%;
+    --palette-purple-50: var(--base-purple), 50%;
+    --palette-purple-60: var(--base-purple), 60%;
+    --palette-purple-70: var(--base-purple), 70%;
+    --palette-purple-80: var(--base-purple), 80%;
+    --palette-purple-90: var(--base-purple), 90%;
+    --palette-purple-100: var(--base-purple), 100%;
+
+    /* Primary Selection */
+    --primary-blue: hsla(var(--palette-blue-50),100%);
+    --primary-red: hsla(var(--palette-red-50),100%);
+    --primary-yellow: hsla(var(--palette-yellow-50),100%);
+    --primary-green: hsla(var(--palette-green-50),100%);
+    --primary-orange: hsla(var(--palette-orange-50),100%);
+    --primary-purple: hsla(var(--palette-purple-50),100%);
 }
+

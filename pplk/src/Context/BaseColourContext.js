@@ -1,5 +1,5 @@
 import React from 'react';
 
-BaseColor = React.createContext();
+const BaseColourContext = React.createContext();
 
-export default BaseColor;
+export default BaseColourContext;
