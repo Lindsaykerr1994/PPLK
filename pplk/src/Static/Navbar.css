@@ -8,9 +8,11 @@ nav{
     box-sizing: border-box;
     position: fixed;
     top: 0;
+    border-bottom: 5px;
+    overflow-x: hidden;
 }
 nav .nav-list {
-    width: calc(100vw - 200px);
+    width: calc(100vw - 50px);
     display: flex;
     justify-content: space-evenly;
     padding-left: 0;
@@ -24,41 +26,72 @@ nav .nav-list {
     width: 20%;
     text-align: center;
     text-transform: uppercase;
+    transition: 1.2s
+}
+.nav-list li:hover {
+    background-color: linear-gradient(0deg, )
 }
 .nav-list li a {
     text-decoration: none;
 }
-nav.blue a {
-    border-color: var(--primary-blue);
+nav.blue, nav.blue *{
     color: var(--primary-blue);
+    border-color: hsla(var(--palette-blue-30),100%);
 }
-nav.red a {
-    border-color: var(--primary-red);
+nav.red, nav.red *{
     color: var(--primary-red);
+    border-color: hsla(var(--palette-red-30),100%);
 }
-nav.yellow a {
-    border-color: var(--primary-yellow);
+nav.yellow, nav.yellow *{
     color: var(--primary-yellow);
+    border-color: hsla(var(--palette-yellow-30),100%);
 }
-nav.green a {
-    border-color: var(--primary-green);
+nav.green, nav.green *{
     color: var(--primary-green);
+    border-color: hsla(var(--palette-green-30),100%);
 }
-nav.orange a {
-    border-color: var(--primary-orange);
+nav.orange, nav.orange *{
     color: var(--primary-orange);
+    border-color: hsla(var(--palette-orange-30),100%);
 }
-nav.purple a {
-    border-color: var(--primary-purple);
+nav.purple, nav.purple *{
     color: var(--primary-purple);
+    border-color: hsla(var(--palette-purple-30),100%);
 }
 nav .colour-bar {
-    width: 200px;
+    width: 235px;
+    background-color: white;
+    transition: right 1.2s;
+    height: 50px;
+    position: absolute;
+    right: -185px;
+    z-index: 2;
     box-sizing: border-box;
-    padding: 10px 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+nav .colour-bar:hover {
+    right: 0px;
+}
+.colour-icon {
+    font-size: 25px;
+    width: 30px;
+    height: 40px;
+    display: inline-flex;
+    padding: 0 7.5px;
+    border: 5px solid;
+    align-items: center; 
+}
+.colour-bar-array { 
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: 5px solid;
+    border-left: 0;
 }
 .colour-btn {
-    width: 25px;
+    width: 25px !important;
     height: 25px;
     border: 0;
     border-radius: 50%;

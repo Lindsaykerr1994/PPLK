@@ -6,6 +6,7 @@ import '../../Static/Navbar.css';
 
 export default function Navbar() {
     const {baseColour,handleColourChange} = React.useContext(BaseColourContext);
+    
     return(
         <nav className={baseColour}>
             <ul className="nav-list">
