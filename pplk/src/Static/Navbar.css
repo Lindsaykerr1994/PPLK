@@ -1,78 +1,45 @@
-nav{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    background-color: #fff !important;
-    box-sizing: border-box;
+nav {
     position: fixed;
-    top: 0;
-    border-bottom: 5px;
-    overflow-x: hidden;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+    z-index: 2
 }
 nav .nav-list {
-    width: calc(100vw - 50px);
-    display: flex;
-    justify-content: space-evenly;
+    width: 100%;
     padding-left: 0;
-    list-style: none;
-    margin-block-end: 0;
-    margin-block-start: 0;
-}
-.nav-list li {
-    line-height: 50px;
-    margin: 0 10px;
-    width: 20%;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 1.2s
-}
-.nav-list li:hover {
-    background-color: linear-gradient(0deg, )
-}
-.nav-list li a {
-    text-decoration: none;
-}
-nav.blue, nav.blue *{
-    color: var(--primary-blue);
-    border-color: hsla(var(--palette-blue-30),100%);
-}
-nav.red, nav.red *{
-    color: var(--primary-red);
-    border-color: hsla(var(--palette-red-30),100%);
-}
-nav.yellow, nav.yellow *{
-    color: var(--primary-yellow);
-    border-color: hsla(var(--palette-yellow-30),100%);
-}
-nav.green, nav.green *{
-    color: var(--primary-green);
-    border-color: hsla(var(--palette-green-30),100%);
-}
-nav.orange, nav.orange *{
-    color: var(--primary-orange);
-    border-color: hsla(var(--palette-orange-30),100%);
-}
-nav.purple, nav.purple *{
-    color: var(--primary-purple);
-    border-color: hsla(var(--palette-purple-30),100%);
-}
-nav .colour-bar {
-    width: 235px;
-    background-color: white;
-    transition: right 1.2s;
     height: 50px;
-    position: absolute;
-    right: -185px;
-    z-index: 2;
-    box-sizing: border-box;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
+    margin: 0;
 }
-nav .colour-bar:hover {
-    right: 0px;
+nav .nav-list li {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+nav .nav-list li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav .nav-list li span {
+    text-transform: lowercase;
+    color: transparent;
+    transition: 0.8s;
+}
+nav .nav-list li:hover span {
+    color: inherit;
+}
+/*
+.colour-bar {
+    width: 230px;
+    height: 50px;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    right: -180px;
 }
 .colour-icon {
     font-size: 25px;
@@ -80,14 +47,12 @@ nav .colour-bar:hover {
     height: 40px;
     display: inline-flex;
     padding: 0 7.5px;
-    border: 5px solid;
     align-items: center; 
 }
 .colour-bar-array { 
     height: 40px;
     display: flex;
     align-items: center;
-    border: 5px solid;
     border-left: 0;
 }
 .colour-btn {
@@ -100,4 +65,4 @@ nav .colour-bar:hover {
 }
 .colour-btn:focus, .colour-btn:active{
     outline: none;
-}
+}*/

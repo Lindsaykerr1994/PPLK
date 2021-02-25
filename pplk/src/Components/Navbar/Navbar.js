@@ -8,26 +8,25 @@ export default function Navbar() {
     const {baseColour,handleColourChange} = React.useContext(BaseColourContext);
     
     return(
-        <nav className={baseColour}>
+        <nav>
             <ul className="nav-list">
                 <li>
-                    <NavLink exact to="/">Home</NavLink>
+                    <NavLink to="/biography"><span>&#60;a&#62;</span>Biography<span>&#60;&#47;a&#62;</span></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/biography">Biography</NavLink>
+                    <NavLink to="/portfolio"><span>&#60;a&#62;</span>Portfolio<span>&#60;&#47;a&#62;</span></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/portfolio">Porfolio</NavLink>
+                    <NavLink exact to="/"><span>&#60;a&#62;</span>Home<span>&#60;&#47;a&#62;</span></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/skills">Skills</NavLink>
+                    <NavLink to="/skills"><span>&#60;a&#62;</span>Skills<span>&#60;&#47;a&#62;</span></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contact">Contact</NavLink>
+                    <NavLink to="/contact"><span>&#60;a&#62;</span>Contact<span>&#60;&#47;a&#62;</span></NavLink>
                 </li>
             </ul>
-            <ColourBar 
-                handleColourChange={handleColourChange}/>
         </nav>
     )
 };
+//<ColourBar handleColourChange={handleColourChange}/>
