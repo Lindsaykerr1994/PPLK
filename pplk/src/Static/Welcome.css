@@ -1,7 +1,29 @@
-#welcome-container:before{
+#binary-background {
+    background: transparent;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    font-size: 12px;
+    word-wrap: break-word;
+    max-width: 100vw;
+    max-height: 100vh;
+    opacity: 0.4;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+#portal {
+    z-index: 2;
+}
+#portal .on-hover {
+    opacity: 0;
+    transition: 0.8s;
+}
+#portal:hover .on-hover {
+    opacity: 1;
 }
