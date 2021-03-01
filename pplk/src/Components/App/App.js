@@ -14,10 +14,12 @@ import '../../Static/CSS-Vars.css';
 import BaseColourContext from '../../Context/BaseColourContext';
 
 function App() {
-    const [baseColour, setBaseColour] = useState("blue");
+    const [baseColour, setBaseColour] = useState("221.1,48.3%");
     const handleColourChange = (e) => {
         var newColour = e.currentTarget.getAttribute("data-colour");
         setBaseColour(newColour);
+        var root = document.documentElement;
+        root.style.setProperty('--base-colour',newColour);
     }
     return (
         <Router>

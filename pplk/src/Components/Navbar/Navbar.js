@@ -1,29 +1,33 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import BaseColourContext from '../../Context/BaseColourContext';
-import ColourBar from './ColourBar';
+import ColourBar from './Subcomponents/ColourBar';
+import SocialBar from './Subcomponents/SocialBar';
 import '../../Static/Navbar.css';
 
 export default function Navbar() {
-    const {baseColour,handleColourChange} = React.useContext(BaseColourContext);
-    
     return(
         <nav>
             <ul className="nav-list">
                 <li>
-                    <NavLink to="/biography"><span>&#60;a&#62;</span>Biography<span>&#60;&#47;a&#62;</span></NavLink>
+                    <NavLink to="/biography"><span className="on-hover">&#60;a&#62;</span>Biography<span className="on-hover">&#60;&#47;a&#62;</span></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/portfolio"><span>&#60;a&#62;</span>Portfolio<span>&#60;&#47;a&#62;</span></NavLink>
+                    <NavLink to="/portfolio"><span className="on-hover">&#60;a&#62;</span>Portfolio<span className="on-hover">&#60;&#47;a&#62;</span></NavLink>
                 </li>
                 <li>
-                    <NavLink exact to="/"><span>&#60;a&#62;</span>Home<span>&#60;&#47;a&#62;</span></NavLink>
+                    <NavLink exact to="/"><span className="on-hover">&#60;a&#62;</span>Home<span className="on-hover">&#60;&#47;a&#62;</span></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/skills"><span>&#60;a&#62;</span>Skills<span>&#60;&#47;a&#62;</span></NavLink>
+                    <NavLink to="/skills"><span className="on-hover">&#60;a&#62;</span>Skills<span className="on-hover">&#60;&#47;a&#62;</span></NavLink>
                 </li>
                 <li>
-                    <NavLink to="/contact"><span>&#60;a&#62;</span>Contact<span>&#60;&#47;a&#62;</span></NavLink>
+                    <NavLink to="/contact"><span className="on-hover">&#60;a&#62;</span>Contact<span className="on-hover">&#60;&#47;a&#62;</span></NavLink>
+                </li>
+                <li>
+                    <ColourBar />
+                </li>
+                <li>
+                    <SocialBar />
                 </li>
             </ul>
         </nav>
