@@ -1,15 +1,21 @@
 import React from 'react';
 import { FaLinkedinIn } from 'react-icons/fa';
-import { FiGithub } from 'react-icons/fi';
+import { FaGithub } from 'react-icons/fa';
 import { SiBuymeacoffee } from 'react-icons/si';
 
 
 export default function SocialBar(){
     return (
         <div className="social-bar">
-            <button className="social-button"><FiGithub /></button>
-            <button className="social-button"><FaLinkedinIn /></button>
-            <button className="social-button"><SiBuymeacoffee /></button>
+            <button className="social-button">
+                <a href="https://github.com/Lindsaykerr1994" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+            </button>
+            <button className="social-button">
+                <a href="https://www.linkedin.com/in/lindsay-kerr-9a8445185/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+            </button>
+            <button className="social-button">
+                <a href="https://www.buymeacoffee.com/GrizzlyWD" target="_blank" rel="noopener noreferrer"><SiBuymeacoffee /></a>
+            </button>
         </div>
     )
 }

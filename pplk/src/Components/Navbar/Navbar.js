@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import ColourBar from './Subcomponents/ColourBar';
 import SocialBar from './Subcomponents/SocialBar';
-import '../../Static/Navbar.css';
+import '../../Assets/Navbar.css';
 
 export default function Navbar() {
     return(

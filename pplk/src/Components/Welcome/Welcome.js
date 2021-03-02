@@ -1,7 +1,7 @@
 import React from 'react';
 import BaseColourContext from '../../Context/BaseColourContext';
-import '../../Static/Welcome.css';
-import '../../Static/WelcomeBackground.css';
+import '../../Assets/Welcome.css';
+import '../../Assets/WelcomeBackground.css';
 import { NavLink } from 'react-router-dom';
 import Crest from './Subcomponents/Crest';
 

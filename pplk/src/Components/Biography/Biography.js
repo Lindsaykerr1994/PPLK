@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Static/Biography.css';
+import '../../Assets/Biography.css';
 
 export default function Biography() {
     return(

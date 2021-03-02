@@ -9,8 +9,8 @@ import Skills from '../Skills/Skills';
 import Portfolio from '../Portfolio/Portfolio';
 import Contact from '../Contact/Contact';
 //Styling
-import '../../Static/App.css';
-import '../../Static/CSS-Vars.css';
+import '../../Assets/App.css';
+import '../../Assets/CSS-Vars.css';
 import BaseColourContext from '../../Context/BaseColourContext';
 
 function App() {

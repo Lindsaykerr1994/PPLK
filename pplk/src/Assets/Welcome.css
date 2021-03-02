@@ -27,13 +27,15 @@ a {
     z-index: 2;
     width: 450px;
     height: 400px;
-    margin: 0 auto;
+    margin: calc(50vh - 250px) auto 0 auto;
     text-align: center;
     background-color: hsla(var(--palette-colour-100),100%);
     color: var(--primary-text-dark) !important;
+    padding-top: 46px;
 }
 #portal h1, #portal h2 {
     text-transform: uppercase;
+    color: hsla(var(--palette-colour-40),100%);
 }
 #portal .on-hover {
     opacity: 0;
