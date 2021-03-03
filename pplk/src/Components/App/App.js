@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import {Route, BrowserRouter as Router, Switch} from 'react-router-dom';
 //Components
-import Navbar from '../Navbar/Navbar';
 import Welcome from '../Welcome/Welcome';
 import Biography from '../Biography/Biography';
 import Skills from '../Skills/Skills';
@@ -24,7 +23,6 @@ function App() {
     return (
         <Router>
             <BaseColourContext.Provider value={{baseColour,handleColourChange}}>
-                <Navbar />
                 <Switch>
                     <Route path="/" exact component={Welcome} />
                     <Route path="/biography" component={Biography} />

@@ -1,15 +1,12 @@
 nav {
-    position: fixed;
-    bottom: 0;
     width: 100%;
     display: flex;
-    background-color: transparent;
     z-index: 2
 }
 nav .nav-list {
     width: 100%;
     padding-left: 0;
-    height: 50px;
+    height: 30px;
     margin: 0;
 }
 nav .nav-list li {
@@ -17,7 +14,7 @@ nav .nav-list li {
     width: 20%;
     height: 100%;
     text-align: center;
-    line-height: 50px;
+    line-height: 30px;
 }
 nav .nav-list li a {
     color: white;
@@ -84,9 +81,6 @@ nav .nav-list li:hover .on-hover {
     height: 50px;
     padding: 10px;
     display: flex;
-    position: fixed;
-    top: 0px;
-    left: 0px;
     transition: 0.8s;
 }
 .social-button {

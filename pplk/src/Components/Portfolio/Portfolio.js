@@ -1,8 +1,14 @@
 import React from 'react';
+import Navbar from '../Navbar/Navbar';
 import '../../Assets/Portfolio.css';
 
 export default function Portfolio() {
     return(
-        <h1>Portfolio</h1>
+        <>
+            <Navbar posVar="top" />
+            <div className="body-container main-container">
+                <h1>Contact</h1>
+            </div>
+        </>
     )
 };

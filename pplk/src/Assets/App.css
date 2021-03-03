@@ -7,24 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 /* Colour Specs */
-.blue {
-    background-color: var(--primary-blue);
-}
-.red {
-    background-color: var(--primary-red);
-}
-.yellow {
-    background-color: var(--primary-yellow);
-}
-.green {
-    background-color: var(--primary-green);
-}
-.orange {
-    background-color: var(--primary-orange);
-}
-.purple {
-    background-color: var(--primary-purple);
-}
+
 /* Component Specs */
 .main-container {
     position: absolute;
@@ -32,4 +15,8 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
+}
+.body-container {
+    padding-top: 30px;
 }
