@@ -1,0 +1,9 @@
+@font-face { 
+    font-family: 'Norwester';
+    src: url('./Fonts/norwester.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Lovelo';
+    src: url('./Fonts/lovelo_black.woff') format('woff');
+}

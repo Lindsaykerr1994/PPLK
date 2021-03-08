@@ -10,6 +10,7 @@ import Contact from '../Contact/Contact';
 //Styling
 import '../../Assets/App.css';
 import '../../Assets/CSS-Vars.css';
+import '../../Assets/Fonts.css';
 import BaseColourContext from '../../Context/BaseColourContext';
 
 function App() {

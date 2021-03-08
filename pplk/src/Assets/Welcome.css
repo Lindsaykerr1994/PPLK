@@ -18,17 +18,26 @@
     user-select: none;
 }*/
 #welcome-container {
+    width: 100vw;
+    height: 100vh;
+    border: 10px solid hsla(var(--palette-colour-100),100%);
     background-image: linear-gradient(335deg,hsla(var(--palette-colour-10),100%),hsla(var(--palette-colour-20),100%),hsla(var(--palette-colour-30),100%),hsla(var(--palette-colour-40),100%))
 }
 a {
     text-decoration: none !important;
 }
-#topbar p{
+#topbar {
+    height: 75px;
+}
+#topbar *{
     margin: 0;
+    font-family: 'Lovelo';
+    text-transform: uppercase;
+    color: hsla(var(--palette-colour-100),100%);
 }
 #portal {
-    margin-top: calc(50vh - 100px);
-    margin-left: calc(50vw - 100px);
+    margin-top: calc(50vh - 195px);
+    margin-left: calc(100vw - 350px);
 }
 #portal svg {
     transition: 0.8s;
