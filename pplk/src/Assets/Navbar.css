@@ -1,7 +1,10 @@
 nav {
     width: 100%;
     display: flex;
-    z-index: 2
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    background-color: hsla(var(--palette-colour-30),100%);
 }
 nav .nav-list {
     width: 100%;
@@ -82,6 +85,9 @@ nav .nav-list li:hover .on-hover {
     padding: 10px;
     display: flex;
     transition: 0.8s;
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
 .social-button {
     height: 40px;
@@ -89,15 +95,19 @@ nav .nav-list li:hover .on-hover {
     border-radius: 50%;
     border: 0;
     padding: 7.5px;
-    background-color: hsla(var(--palette-colour-100),20%);
+    background-color: hsla(var(--palette-colour-100),0%);
     transition: 0.8s;
     margin: 0 2.5px;
 }
 .social-button:hover {
-    background-color: hsla(var(--palette-colour-100),80%);
+    background-color: hsla(var(--palette-colour-100),100%);
     transform: scale(1.1);
+}
+.social-button:hover svg {
+    color: hsla(var(--palette-colour-30),100%);
 }
 .social-button svg {
     font-size: 25px;
-    color: var(--primary-colour);
+    color: hsla(var(--palette-colour-100),100%);
+    transition: 0.8s;
 }

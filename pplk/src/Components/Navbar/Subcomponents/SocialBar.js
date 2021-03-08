@@ -4,12 +4,9 @@ import { FaGithub } from 'react-icons/fa';
 import { SiBuymeacoffee } from 'react-icons/si';
 
 
-export default function SocialBar({styling}){
-    console.log(styling)
-    var posStyle = styling;
-    console.log(posStyle)
+export default function SocialBar(){
     return (
-        <div className="social-bar" style={posStyle}>
+        <div className="social-bar">
             <button className="social-button">
                 <a href="https://github.com/Lindsaykerr1994" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
             </button>

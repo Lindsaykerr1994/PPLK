@@ -2,19 +2,9 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import '../../Assets/Navbar.css';
 
-export default function Navbar({posVar}) {
-    var posStyle = {}
-    posVar==="top" ? posStyle = {
-        "top": 0,
-        "backgroundColor": "hsla(var(--palette-colour-30),100%)",
-        "position": "fixed"
-        } : posStyle = {
-        "bottom": 0,
-        "backgroundColor": "transparent",
-        "position": "absolute"
-    }
+export default function Navbar() {
     return(
-        <nav style={posStyle}>
+        <nav>
             <ul className="nav-list">
                 <li>
                     <NavLink to="/biography">Biography</NavLink>

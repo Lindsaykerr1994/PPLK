@@ -8,6 +8,15 @@ export default function Biography() {
             <Navbar posVar="top" />
             <div className="body-container main-container">
                 <h1>Biography</h1>
+                <div id="about-text" className="">
+                    <p>All About Me</p>
+                </div>
+                <div id="employment-text" className="">
+                    <p>All About My Work</p>
+                </div>
+                <div id="education-text" className="">
+                    <p>All About My Education</p>
+                </div>
             </div>
         </>
     )
