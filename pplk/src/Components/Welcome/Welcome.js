@@ -9,12 +9,10 @@ import '../../Assets/WelcomeBackground.css';
 export default function Welcome() {
     return(
         <div id="welcome-container" className="main-container">
-            <div id="topbar">
-                <h1>Lindsay Kerr</h1><h2>Web Developer</h2>
-            </div> 
+            <h4>Lindsay Kerr - Web Development</h4>
             <NavLink to="/biography">
                 <div id="portal">
-                <Crest />
+                    <Crest />
                 </div>
             </NavLink>
             <SocialBar />

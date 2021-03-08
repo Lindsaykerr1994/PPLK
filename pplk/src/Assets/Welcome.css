@@ -1,22 +1,3 @@
-/*#binary-background {
-    background: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    overflow: hidden;
-    font-size: 12px;
-    word-wrap: break-word;
-    max-width: 100vw;
-    max-height: 100vh;
-    opacity: 0.4;
-    -webkit-touch-callout: none; iOS Safari
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}*/
 #welcome-container {
     width: 100vw;
     height: 100vh;
@@ -26,18 +7,22 @@
 a {
     text-decoration: none !important;
 }
-#topbar {
-    height: 75px;
-}
-#topbar *{
+#welcome-container h4 {
     margin: 0;
-    font-family: 'Lovelo';
     text-transform: uppercase;
     color: hsla(var(--palette-colour-100),100%);
+    font-family: 'Raleway';
+    font-weight: 400;
+
 }
 #portal {
-    margin-top: calc(50vh - 195px);
-    margin-left: calc(100vw - 350px);
+    position: absolute;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 10px solid hsla(var(--palette-colour-100),100%);
+    top: calc(50vh - 110px);
+    right: calc(50vw - 110px);
 }
 #portal svg {
     transition: 0.8s;
@@ -47,5 +32,5 @@ a {
     transform-origin: center center;
 }
 #portal g{
-    fill: hsla(var(--palette-colour-90),100%);
+    fill: hsla(var(--palette-colour-100),100%);
 }

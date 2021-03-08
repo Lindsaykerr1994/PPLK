@@ -7,7 +7,6 @@ export default function ColourBar() {
     const handleColourChange = React.useContext(BaseColourContext).handleColourChange;
     return(
         <div className="colour-bar">
-            <div className="colour-icon"><FaPaintBrush /></div>
             <div className="colour-bar-array">
                 {colours.map((colour,i) => {
                 return (
@@ -21,6 +20,7 @@ export default function ColourBar() {
                 )
             })}
             </div>
+            <div className="colour-icon"><FaPaintBrush /></div>
         </div>
     )
 };

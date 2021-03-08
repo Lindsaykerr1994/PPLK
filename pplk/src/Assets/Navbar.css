@@ -34,16 +34,16 @@ nav .nav-list li:hover .on-hover {
 }
 /* Colour Bar */
 .colour-bar {
-    width: 230px;
-    height: 50px;
+    width: 250px;
+    height: 40px;
     display: flex;
     position: fixed;
-    top: 0px;
-    right: -190px;
+    bottom: 20px;
+    left: -200px;
     transition: 0.8s;
 }
 .colour-bar:hover {
-    right: 0px;
+    left: 0px;
 }
 .colour-icon {
     font-size: 25px;
@@ -52,7 +52,7 @@ nav .nav-list li:hover .on-hover {
     display: inline-flex;
     padding: 0 7.5px;
     align-items: center; 
-    color:  hsla(var(--palette-colour-100),60%);
+    color:  hsla(var(--palette-colour-100),30%);
     transition: 0.8s;
 }
 .colour-bar:hover .colour-icon {
@@ -63,6 +63,11 @@ nav .nav-list li:hover .on-hover {
     display: flex;
     align-items: center;
     border-left: 0;
+    margin: 0 20px;
+    transition: 0.8s;
+}
+.colour-bar:hover .colour-bar-array{
+    margin-right: 0;
 }
 .colour-btn {
     width: 25px !important;
@@ -87,7 +92,7 @@ nav .nav-list li:hover .on-hover {
     transition: 0.8s;
     position: fixed;
     bottom: 10px;
-    right: calc(50vw - 87.5px);
+    right: calc(50vw - 77.5px);
 }
 .social-button {
     height: 40px;
