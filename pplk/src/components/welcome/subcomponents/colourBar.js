@@ -14,7 +14,7 @@ export default function ColourBar() {
                         key={i}
                         data-number={i}
                         data-colour={colour.name}
-                        style={{backgroundColor: `hsla(${colour.hue},50%,100%)`}}
+                        style={{backgroundColor: `hsla(${colour.hue},100%)`}}
                         onClick={(e) => handleColourChange(e)}
                         className="colour-btn">
                     </button>

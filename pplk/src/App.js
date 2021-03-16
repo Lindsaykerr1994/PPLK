@@ -13,10 +13,12 @@ export default function App(){
     const [baseColour, setBaseColour] = useState("221.1,48.3%");
     const handleColourChange = (e) => {
         var index = e.currentTarget.getAttribute("data-number");
-        var newColour = colours[index]['hue']
-        setBaseColour(newColour);
+        var baseColour = colours[index]['hue'];
+        var altColour = colours[index]['alt'];
+        setBaseColour(baseColour);
         var root = document.documentElement;
-        root.style.setProperty('--base-colour',newColour);
+        root.style.setProperty('--base-colour', baseColour);
+        root.style.setProperty('--alt-colour', altColour)
     }
     return(
        <Router>
