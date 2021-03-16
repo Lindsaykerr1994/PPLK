@@ -1,0 +1,23 @@
+:root {
+    /* Base Colours */
+    --base-colour: 221.1,48.3%;
+
+    /* colour Palette */
+    --palette-colour-10: var(--base-colour), 10%;
+    --palette-colour-20: var(--base-colour), 20%;
+    --palette-colour-30: var(--base-colour), 30%;
+    --palette-colour-40: var(--base-colour), 40%;
+    --palette-colour-50: var(--base-colour), 50%;
+    --palette-colour-60: var(--base-colour), 60%;
+    --palette-colour-70: var(--base-colour), 70%;
+    --palette-colour-80: var(--base-colour), 80%;
+    --palette-colour-90: var(--base-colour), 90%;
+    --palette-colour-100: var(--base-colour), 100%;
+
+    /* Primary Selection */
+    --primary-colour: hsla(var(--palette-colour-50),100%);
+    --primary-colour-80: hsla(var(--palette-colour-50),80%);
+    --primary-text-light: hsla(var(--palette-colour-100),100%);
+    --primary-text-dark: hsla(var(--palette-colour-10),100%);
+}
+
