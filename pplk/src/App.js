@@ -14,11 +14,9 @@ export default function App(){
     const handleColourChange = (e) => {
         var index = e.currentTarget.getAttribute("data-number");
         var baseColour = colours[index]['hue'];
-        var altColour = colours[index]['alt'];
         setBaseColour(baseColour);
         var root = document.documentElement;
-        root.style.setProperty('--base-colour', baseColour);
-        root.style.setProperty('--alt-colour', altColour)
+        root.style.setProperty('--alt-colour', baseColour)
     }
     return(
        <Router>

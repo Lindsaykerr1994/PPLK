@@ -1,10 +1,12 @@
 import React from 'react';
+import ShieldIcon from './shieldIcon';
 
-export default function ShieldLink({title}){
+export default function ShieldLink({iconLib, iconName}){
     return(
         <div className="shieldLink">
             <div className="shieldFront">
-                <h4>{title}</h4>
+                <div className="shieldInner">
+                </div>
             </div>
             <div className="shieldSquare">
 

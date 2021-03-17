@@ -7,19 +7,24 @@ export default function Welcome(){
     return (
         <div id="welcomeContainer">
             <ShieldLink 
-                title = "Bio"
+                iconLib = "Fa"
+                iconName = "User"
             />
             <ShieldLink 
-                title = "Portfolio"
+                iconLib = "Bs"
+                iconName = "Book"
             />
-            <ShieldLink 
-                title = "Welcome"
+            <ShieldLink  
+                iconLib = "Bs"
+                iconName = "Code"
             />
-            <ShieldLink 
-                title = "Skills"
+            <ShieldLink  
+                iconLib = ""
+                iconName = ""
             />
-            <ShieldLink 
-                title = "Contact"
+            <ShieldLink  
+                iconLib = ""
+                iconName = ""
             />
             <ColourBar />
         </div>
