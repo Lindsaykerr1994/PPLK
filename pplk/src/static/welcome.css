@@ -11,6 +11,7 @@
 :root {
     --base-shield-width: 110px;
     --base-shield-height: 300px;
+    --shield-icon-size: 64px;
 }
 .shieldLink {
     position: relative;
@@ -39,6 +40,7 @@
 .shieldLink:hover {
     transform: scale(1.2);
 }
+/* ShieldFront */
 .shieldFront {
     position: absolute;
     box-sizing: border-box;
@@ -48,6 +50,7 @@
 .shieldInner {
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
     box-shadow: 5px 10px hsla(var(--palette-colour-10),5%);
     box-shadow: 0px 20px hsla(var(--palette-colour-10),5%);
 }
@@ -60,9 +63,29 @@
     left: 0;
     background-image: linear-gradient(to top left, hsla(var(--palette-colour-10),5%), transparent, transparent);
 }
-.shieldInner h4{
-    margin: 0;
+.shieldInner .iconContainer{
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
+/* .shieldLink:nth-of-type(1) .shieldFront .shieldInner .iconContainer,
+.shieldLink:nth-of-type(5) .shieldFront .shieldInner .iconContainer{
+    height: var(--shield-icon-size);
+    width: var(--shield-icon-size);
+}
+.shieldLink:nth-of-type(2) .shieldFront .shieldInner .iconContainer,
+.shieldLink:nth-of-type(4) .shieldFront .shieldInner .iconContainer{
+    height: calc(var(--shield-icon-size)*1.25);
+    width: calc(var(--shield-icon-size)*1.25);
+}
+.shieldLink:nth-of-type(3) .shieldFront .shieldInner .iconContainer{
+    height: calc(var(--shield-icon-size)*1.5);
+    width: calc(var(--shield-icon-size)*1.5);
+} */
+.shieldInner .iconContainer svg{
+    position: absolute;
+}
+/* ShieldSquare */
 .shieldSquare {
     position: absolute;
     box-sizing: border-box;

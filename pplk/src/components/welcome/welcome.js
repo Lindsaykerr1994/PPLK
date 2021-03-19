@@ -7,24 +7,29 @@ export default function Welcome(){
     return (
         <div id="welcomeContainer">
             <ShieldLink 
-                iconLib = "Fa"
-                iconName = "Code"
+                libName = "Fa"
+                iconName = "FaUser"
+                fontSize = "48px"
             />
             <ShieldLink 
-                iconLib = "Bs"
-                iconName = "Code"
+                libName = "Gi"
+                iconName = "GiBookmark"
+                fontSize = "64px"
             />
             <ShieldLink  
-                iconLib = "Bs"
-                iconName = "Code"
+                libName = "Gi"
+                iconName = "GiFluffyWing"
+                fontSize = "120px"
             />
             <ShieldLink  
-                iconLib = ""
-                iconName = "Code"
+                libName = "Vsc"
+                iconName = "VscTools"
+                fontSize = "64px"
             />
             <ShieldLink  
-                iconLib = ""
-                iconName = "Code"
+                libName = "Bi"
+                iconName = "BiPaperPlane"
+                fontSize = "48px"
             />
         </div>
     )
