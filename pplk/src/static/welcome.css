@@ -13,13 +13,11 @@
     --base-shield-height: 300px;
 }
 .shieldLink {
-    height: 100vh;
-    width: 20vw;
     position: relative;
     display: flex;
     justify-content: center;
     align-content: center;
-    transition: 0.8s;
+    transition: 0.4s;
 }
 .shieldLink:nth-of-type(1) .shieldFront,
 .shieldLink:nth-of-type(5) .shieldFront{
@@ -70,24 +68,32 @@
     box-sizing: border-box;
     z-index: 2;
     background-color: var(--second-colour);
+    height: calc(var(--base-shield-height) + 8px);
+    width: calc(var(--base-shield-width) + 8px);
+    top: calc(50vh - ((var(--base-shield-height)/2) + 4px));
+    overflow: hidden;
+}
+.shieldSquare::after { 
+    position: absolute;
+    content: "";
+    transform: rotate(20.96deg);
+    height: 150%;
+    width: 150%;
+    left: 35.5px;
+    background-color: rgba(0,0,0,0.25);
+    ;
 }
 .shieldLink:nth-of-type(1) .shieldSquare,
 .shieldLink:nth-of-type(5) .shieldSquare{
-    height: calc(var(--base-shield-height)/3);
-    width: calc(var(--base-shield-width) + 7px);
-    top: calc(50vh - (var(--base-shield-height)/6));
+    transform: scale(1);
 }
 .shieldLink:nth-of-type(2) .shieldSquare,
 .shieldLink:nth-of-type(4) .shieldSquare{
-    height: calc((var(--base-shield-height)*1.25)/3);
-    width: calc((var(--base-shield-width)*1.25) + 7px);
-    top: calc(50vh - ((var(--base-shield-height)*1.25)/6));
+    transform: scale(1.25);
 }
 .shieldLink:nth-of-type(3) .shieldSquare{
-    height: calc((var(--base-shield-height)*1.5)/3);
-    width: calc((var(--base-shield-width)*1.5) + 7px);
-    top: calc(50vh - ((var(--base-shield-height)*1.5)/6));
-}
+    transform: scale(1.5);
+}*/
 /* Colour Bar */
 .colour-bar {
     width: 250px;

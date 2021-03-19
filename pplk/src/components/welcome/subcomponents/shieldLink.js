@@ -1,7 +1,8 @@
 import React from 'react';
-import ShieldIcon from './shieldIcon';
+import { FaBeer } from 'react-icons/fa';
 
 export default function ShieldLink({iconLib, iconName}){
+    console.log(iconName);
     return(
         <div className="shieldLink">
             <div className="shieldFront">

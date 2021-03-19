@@ -8,11 +8,11 @@ export default function Welcome(){
         <div id="welcomeContainer">
             <ShieldLink 
                 iconLib = "Fa"
-                iconName = "User"
+                iconName = "Code"
             />
             <ShieldLink 
                 iconLib = "Bs"
-                iconName = "Book"
+                iconName = "Code"
             />
             <ShieldLink  
                 iconLib = "Bs"
@@ -20,13 +20,12 @@ export default function Welcome(){
             />
             <ShieldLink  
                 iconLib = ""
-                iconName = ""
+                iconName = "Code"
             />
             <ShieldLink  
                 iconLib = ""
-                iconName = ""
+                iconName = "Code"
             />
-            <ColourBar />
         </div>
     )
 }
